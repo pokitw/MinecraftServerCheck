@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/8.1.1/com.minecraft.pingchecker.app-mergeDebugResources-28:/layout/activity_main.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/8.1.1/com.minecraft.pingchecker.app-main-31:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.minecraft.pingchecker.app-mergeDebugResources-28:/layout/activity_main.xml",
+        "source": "com.minecraft.pingchecker.app-main-31:/layout/activity_main.xml"
+    }
+]

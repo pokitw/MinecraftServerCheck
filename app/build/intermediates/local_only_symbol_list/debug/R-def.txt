@@ -1,0 +1,19 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id app_title
+id check_ping_button
+id live_ping_result_text
+id loading_progress
+id ping_result_text
+id server_address_input
+id tips_text
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style AppTheme
+style Base.AppTheme
+xml backup_rules
+xml data_extraction_rules

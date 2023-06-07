@@ -1,0 +1,115 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.minecraft.pingchecker"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:5:5-67
+11-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:5:22-64
+12
+13    <queries>
+13-->[com.itsaky.androidide:logsender:2.4.1-beta-c0cb437d8-SNAPSHOT] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b0d42b9afecdffd312ef920ba390b28/transformed/logsender-2.4.1-beta-c0cb437d8-SNAPSHOT/AndroidManifest.xml:23:5-25:15
+14        <package android:name="com.itsaky.androidide" />
+14-->[com.itsaky.androidide:logsender:2.4.1-beta-c0cb437d8-SNAPSHOT] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b0d42b9afecdffd312ef920ba390b28/transformed/logsender-2.4.1-beta-c0cb437d8-SNAPSHOT/AndroidManifest.xml:24:9-57
+14-->[com.itsaky.androidide:logsender:2.4.1-beta-c0cb437d8-SNAPSHOT] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b0d42b9afecdffd312ef920ba390b28/transformed/logsender-2.4.1-beta-c0cb437d8-SNAPSHOT/AndroidManifest.xml:24:18-54
+15    </queries>
+16
+17    <uses-permission android:name="com.itsaky.androidide.permission.BIND_LOG_SERVICE" />
+17-->[com.itsaky.androidide:logsender:2.4.1-beta-c0cb437d8-SNAPSHOT] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b0d42b9afecdffd312ef920ba390b28/transformed/logsender-2.4.1-beta-c0cb437d8-SNAPSHOT/AndroidManifest.xml:28:5-89
+17-->[com.itsaky.androidide:logsender:2.4.1-beta-c0cb437d8-SNAPSHOT] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b0d42b9afecdffd312ef920ba390b28/transformed/logsender-2.4.1-beta-c0cb437d8-SNAPSHOT/AndroidManifest.xml:28:22-86
+18
+19    <permission
+19-->[androidx.core:core:1.9.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/235a55cb36ea386bc8e2d997cc49aa1a/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+20        android:name="com.minecraft.pingchecker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.9.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/235a55cb36ea386bc8e2d997cc49aa1a/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.9.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/235a55cb36ea386bc8e2d997cc49aa1a/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.minecraft.pingchecker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+23-->[androidx.core:core:1.9.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/235a55cb36ea386bc8e2d997cc49aa1a/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.9.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/235a55cb36ea386bc8e2d997cc49aa1a/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+24
+25    <application
+25-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:7:5-25:19
+26        android:allowBackup="true"
+26-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:8:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.9.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/235a55cb36ea386bc8e2d997cc49aa1a/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:9:9-43
+30        android:label="@string/app_name"
+30-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:10:9-41
+31        android:roundIcon="@mipmap/ic_launcher"
+31-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:11:9-48
+32        android:supportsRtl="true"
+32-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:12:9-35
+33        android:theme="@style/AppTheme" >
+33-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:13:9-40
+34        <activity
+34-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:15:9-23:20
+35            android:name="com.minecraft.pingchecker.MainActivity"
+35-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:16:13-41
+36            android:exported="true" >
+36-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:17:13-36
+37            <intent-filter>
+37-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:18:13-22:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:19:17-69
+38-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:19:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:21:17-77
+40-->/storage/emulated/0/AndroidIDEProjects/Minecraft Ping Checker/app/src/main/AndroidManifest.xml:21:27-74
+41            </intent-filter>
+42        </activity>
+43
+44        <provider
+44-->[com.itsaky.androidide:logsender:2.4.1-beta-c0cb437d8-SNAPSHOT] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b0d42b9afecdffd312ef920ba390b28/transformed/logsender-2.4.1-beta-c0cb437d8-SNAPSHOT/AndroidManifest.xml:31:9-35:40
+45            android:name="com.itsaky.androidide.logsender.utils.LogSenderInstaller"
+45-->[com.itsaky.androidide:logsender:2.4.1-beta-c0cb437d8-SNAPSHOT] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b0d42b9afecdffd312ef920ba390b28/transformed/logsender-2.4.1-beta-c0cb437d8-SNAPSHOT/AndroidManifest.xml:32:13-84
+46            android:authorities="com.minecraft.pingchecker.logsender-installer"
+46-->[com.itsaky.androidide:logsender:2.4.1-beta-c0cb437d8-SNAPSHOT] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b0d42b9afecdffd312ef920ba390b28/transformed/logsender-2.4.1-beta-c0cb437d8-SNAPSHOT/AndroidManifest.xml:33:13-71
+47            android:enabled="@bool/logsender_enabled"
+47-->[com.itsaky.androidide:logsender:2.4.1-beta-c0cb437d8-SNAPSHOT] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b0d42b9afecdffd312ef920ba390b28/transformed/logsender-2.4.1-beta-c0cb437d8-SNAPSHOT/AndroidManifest.xml:34:13-54
+48            android:exported="false" />
+48-->[com.itsaky.androidide:logsender:2.4.1-beta-c0cb437d8-SNAPSHOT] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b0d42b9afecdffd312ef920ba390b28/transformed/logsender-2.4.1-beta-c0cb437d8-SNAPSHOT/AndroidManifest.xml:35:13-37
+49
+50        <service
+50-->[com.itsaky.androidide:logsender:2.4.1-beta-c0cb437d8-SNAPSHOT] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b0d42b9afecdffd312ef920ba390b28/transformed/logsender-2.4.1-beta-c0cb437d8-SNAPSHOT/AndroidManifest.xml:37:9-39:40
+51            android:name="com.itsaky.androidide.logsender.LogSenderService"
+51-->[com.itsaky.androidide:logsender:2.4.1-beta-c0cb437d8-SNAPSHOT] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b0d42b9afecdffd312ef920ba390b28/transformed/logsender-2.4.1-beta-c0cb437d8-SNAPSHOT/AndroidManifest.xml:38:13-76
+52            android:exported="false" />
+52-->[com.itsaky.androidide:logsender:2.4.1-beta-c0cb437d8-SNAPSHOT] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/4b0d42b9afecdffd312ef920ba390b28/transformed/logsender-2.4.1-beta-c0cb437d8-SNAPSHOT/AndroidManifest.xml:39:13-37
+53
+54        <provider
+54-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3b1383cbb7835f36af50d47ea388cbd5/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+55            android:name="androidx.startup.InitializationProvider"
+55-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3b1383cbb7835f36af50d47ea388cbd5/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+56            android:authorities="com.minecraft.pingchecker.androidx-startup"
+56-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3b1383cbb7835f36af50d47ea388cbd5/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+57            android:exported="false" >
+57-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3b1383cbb7835f36af50d47ea388cbd5/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+58            <meta-data
+58-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3b1383cbb7835f36af50d47ea388cbd5/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+59-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3b1383cbb7835f36af50d47ea388cbd5/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+60                android:value="androidx.startup" />
+60-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/3b1383cbb7835f36af50d47ea388cbd5/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+61            <meta-data
+61-->[androidx.lifecycle:lifecycle-process:2.4.1] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/351a7a6801b7652a943689672c323a4d/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+62                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+62-->[androidx.lifecycle:lifecycle-process:2.4.1] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/351a7a6801b7652a943689672c323a4d/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+63                android:value="androidx.startup" />
+63-->[androidx.lifecycle:lifecycle-process:2.4.1] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/351a7a6801b7652a943689672c323a4d/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+64        </provider>
+65    </application>
+66
+67</manifest>
