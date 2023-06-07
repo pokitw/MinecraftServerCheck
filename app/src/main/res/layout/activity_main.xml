@@ -11,9 +11,9 @@
     <TextView
          android:layout_height="wrap_content"
          android:layout_width="wrap_content"
+         android:layout_centerHorizontal="true"
          android:layout_marginBottom="16dp"
          android:textSize="24sp"
-         android:layout_centerHorizontal="true"
          android:textColor="#FFFFFF"
          android:id="@+id/app_title"
          android:text="Minecraft Server Ping Checker"
@@ -22,33 +22,34 @@
     <EditText
          android:layout_height="wrap_content"
          android:layout_width="match_parent"
-         android:layout_marginBottom="16dp"
          android:layout_below="@id/app_title"
+         android:layout_marginBottom="16dp"
          android:hint="Enter server address"
          android:textColorHint="#9C9C9C"
-         android:backgroundTint="#FFFFFF"
          android:textColor="#FFFFFF"
+         android:backgroundTint="#FFFFFF"
          android:inputType="text"
          android:id="@+id/server_address_input" />
 
     <Button
          android:layout_height="wrap_content"
          android:layout_width="wrap_content"
-         android:layout_marginBottom="16dp"
          android:layout_below="@id/server_address_input"
-         android:background="#2962FF"
+         android:layout_marginBottom="16dp"
          android:layout_centerHorizontal="true"
          android:textColor="#FFFFFF"
+         android:background="#2962FF"
          android:id="@+id/check_ping_button"
          android:text="Check Ping" />
 
     <ProgressBar
          android:layout_height="wrap_content"
          android:layout_width="wrap_content"
-         android:visibility="gone"
          android:layout_below="@id/check_ping_button"
-         android:indeterminate="true"
+         android:layout_marginBottom="16dp"
          android:layout_centerHorizontal="true"
+         android:visibility="gone"
+         android:indeterminate="true"
          android:indeterminateTint="#2962FF"
          android:id="@+id/loading_progress" />
 
@@ -57,8 +58,8 @@
          android:layout_width="wrap_content"
          android:layout_below="@id/loading_progress"
          android:textSize="18sp"
-         android:layout_centerHorizontal="true"
          android:textColor="#FFFFFF"
+         android:layout_centerHorizontal="true"
          android:layout_marginTop="16dp"
          android:id="@+id/ping_result_text" />
 
@@ -67,8 +68,8 @@
          android:layout_width="wrap_content"
          android:layout_below="@id/ping_result_text"
          android:textSize="18sp"
-         android:layout_centerHorizontal="true"
          android:textColor="#FFFFFF"
+         android:layout_centerHorizontal="true"
          android:layout_marginTop="16dp"
          android:id="@+id/tips_text" />
 
@@ -77,8 +78,8 @@
          android:layout_width="wrap_content"
          android:layout_below="@id/tips_text"
          android:textSize="18sp"
-         android:layout_centerHorizontal="true"
          android:textColor="#FFFFFF"
+         android:layout_centerHorizontal="true"
          android:layout_marginTop="16dp"
          android:id="@+id/live_ping_result_text" />
 
