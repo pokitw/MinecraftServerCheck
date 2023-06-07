@@ -14,8 +14,6 @@ import java.io.IOException;
 import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView livePingResultText;
 
     private List<Integer> pingHistory;
-    private Timer livePingTimer;
     private Handler handler;
 
     @Override
@@ -45,14 +42,11 @@ public class MainActivity extends AppCompatActivity {
         pingHistory = new ArrayList<>();
         handler = new Handler();
 
-        checkPingButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String serverAddress = serverAddressInput.getText().toString().trim();
+        checkPingButton.setOnClickListener(v -> {
+            String serverAddress = serverAddressInput.getText().toString().trim();
 
-                if (!serverAddress.isEmpty()) {
-                    new PingTask().execute(serverAddress);
-                }
+            if (!serverAddress.isEmpty()) {
+                new PingTask().execute(serverAddress);
             }
         });
     }
@@ -66,20 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected Integer doInBackground(String... params) {
-            String serverAddress = params[0];
-
-            try {
-                InetAddress server = InetAddress.getByName(serverAddress);
-                long startTime = System.currentTimeMillis();
-                if (server.isReachable(5000)) {
-                    long endTime = System.currentTimeMillis();
-                    return (int) (endTime - startTime);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            return -1;
+            return checkPing(params[0]);
         }
 
         @Override
@@ -106,6 +87,20 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private int checkPing(String serverAddress) {
+        try {
+            InetAddress server = InetAddress.getByName(serverAddress);
+            long startTime = System.currentTimeMillis();
+            if (server.isReachable(5000)) {
+                long endTime = System.currentTimeMillis();
+                return (int) (endTime - startTime);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return -1;
+    }
+
     private void updateAveragePing() {
         int numberOfChecks = pingHistory.size();
         if (numberOfChecks > 0) {
@@ -129,46 +124,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String findSimilarServer(String serverAddress) {
-        // Add your logic to find similar servers here
+        // Logic to find similar servers here
         // Return the address of a similar server, or null if none found
         return null;
     }
 
     private void updateLivePing() {
-        if (livePingTimer != null) {
-            livePingTimer.cancel();
-        }
-
-        livePingTimer = new Timer();
-        livePingTimer.scheduleAtFixedRate(new TimerTask() {
+        handler.removeCallbacksAndMessages(null);
+        handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 String serverAddress = serverAddressInput.getText().toString().trim();
                 if (!serverAddress.isEmpty()) {
                     new LivePingTask().execute(serverAddress);
                 }
+                updateLivePing();
             }
-        }, 0, 5000);
+        }, 5000);
     }
 
     private class LivePingTask extends AsyncTask<String, Void, Integer> {
 
         @Override
         protected Integer doInBackground(String... params) {
-            String serverAddress = params[0];
-
-            try {
-                InetAddress server = InetAddress.getByName(serverAddress);
-                long startTime = System.currentTimeMillis();
-                if (server.isReachable(5000)) {
-                    long endTime = System.currentTimeMillis();
-                    return (int) (endTime - startTime);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            return -1;
+            return checkPing(params[0]);
         }
 
         @Override
