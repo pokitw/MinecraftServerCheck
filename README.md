@@ -54,7 +54,7 @@ Contributions to the MinecraftServerCheck project are welcome. If you want to co
 
 ## Support
 
-If you encounter any issues or have suggestions for improvement, please open an issue on the GitHub repository: [https://github.com/your-username/MinecraftServerCheck/issues](https://github.com/your-username/MinecraftServerCheck/issues)
+If you encounter any issues or have suggestions for improvement, please open an issue on the GitHub repository: [https://github.com/your-username/MinecraftServerCheck/issues](https://github.com/muhtadshah/MinecraftServerCheck/issues)
 
 Please provide detailed information about the problem or your suggestion to help us understand and address it effectively.
 
